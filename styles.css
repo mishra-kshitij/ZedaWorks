@@ -1,0 +1,125 @@
+:root {
+  --primary: #0f2a44;
+  --accent: #f7931e;
+  --bg: #ffffff;
+  --muted: #6b7280;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Inter', sans-serif;
+  background: var(--bg);
+  color: var(--primary);
+  line-height: 1.6;
+}
+
+.site-header {
+  max-width: 1200px;
+  margin: auto;
+  padding: 2rem 1.5rem;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.logo {
+  height: 150px;
+}
+
+nav a {
+  margin-left: 1.5rem;
+  text-decoration: none;
+  color: var(--primary);
+  font-weight: 500;
+}
+
+nav a:hover {
+  color: var(--accent);
+}
+
+.hero {
+  max-width: 900px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+  text-align: center;
+}
+
+.hero h1 {
+  font-size: 2.8rem;
+  font-weight: 700;
+}
+
+.hero span {
+  color: var(--accent);
+}
+
+.hero p {
+  margin-top: 1.2rem;
+  color: var(--muted);
+  font-size: 1.1rem;
+}
+
+section {
+  max-width: 1000px;
+  margin: 4rem auto;
+  padding: 0 1.5rem;
+}
+
+section h2 {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+section p {
+  color: var(--muted);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(240px, 1fr));
+  gap: 2rem;
+  margin-top: 2rem;
+}
+
+.card {
+  background: #fafafa;
+  padding: 1.8rem;
+  border-radius: 14px;
+  border: 1px solid #e5e7eb;
+}
+
+footer {
+  border-top: 1px solid #e5e7eb;
+  padding: 2.5rem 1.5rem;
+}
+
+.footer-inner {
+  max-width: 1000px;
+  margin: auto;
+  text-align: center;
+}
+
+.social a {
+  margin: 0 0.75rem;
+  text-decoration: none;
+  color: var(--primary);
+}
+
+.social a:hover {
+  color: var(--accent);
+}
+
+@media (max-width: 640px) {
+  .hero h1 {
+    font-size: 2.1rem;
+  }
+
+  .logo {
+    height: 68px;
+  }
+}
